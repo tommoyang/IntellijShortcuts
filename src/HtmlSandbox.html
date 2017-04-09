@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Text Editors</title>
+    <style>
+        table {
+            text-align: center;
+        }
+
+        td {
+            background-color: lightslategray;
+            border: 1px solid black;
+        }
+
+        .yes {
+            background-color: lawngreen;
+        }
+
+        .no {
+            background-color: indianred;
+        }
+
+        .partial {
+            background-color: yellow;
+        }
+
+        .plugin {
+            background-color: blueviolet;
+        }
+
+        th {
+            background-color: cornflowerblue;
+            border: 1px solid black;
+            font-weight: bold;
+        }
+
+        tbody tr td:first-child {
+            background-color: orangered;
+            font-weight: bold;
+        }
+
+        tfoot td {
+            background-color: cornflowerblue;
+            border: 1px solid black;
+            font-weight: bold;
+        }
+    </style>
+
+    <!-- Latest compiled and minified CSS & JS -->
+    <link rel="stylesheet" media="screen" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+
+    <!-- DO NOT TOUCH BEYOND THIS LINE -->
+    <!-- The following applies color to table cells based on their textual content -->
+    <script type="text/javascript">
+        document.onload = function() {
+            var tds = document.getElementsByTagName("td");
+
+            for (var i = 0, max = tds.length; i < max; i++) {
+                if (tds[i].textContent === "Yes") {
+                    tds[i].classList.add("yes");
+                } else if (tds[i].textContent === "No") {
+                    tds[i].classList.add("no");
+                } else if (tds[i].textContent === "Partial") {
+                    tds[i].classList.add("partial");
+                } else if (tds[i].textContent === "Plug-in") {
+                    tds[i].classList.add("plugin");
+                }
+            }
+        }
+    </script>
+</head>
+<body>
+<div class="container">
+    <div class="row">
+        <div class="col-xs-12">
+            <h1>Oh no, it's this exercise again!</h1>
+
+            <p>Try playing around with these shortcuts to see what they do:</p>
+
+            <div>
+                Select some text and press:
+                <div class="btn-group">
+                    <button type="button" class="btn btn-default">Alt</button>
+                    <button type="button" class="btn btn-default">J</button>
+                </div>
+            </div>
+            <div>
+                Hold down
+                <div class="btn-group">
+                    <button type="button" class="btn btn-default">Shift</button>
+                    <button type="button" class="btn btn-default">Alt</button>
+                </div>
+                and click on various places in the file
+            </div>
+            <div>
+                Find and replace:
+                <div class="btn-group">
+                    <button type="button" class="btn btn-default">Ctrl</button>
+                    <button type="button" class="btn btn-default">R</button>
+                </div>
+                Top line is find, Bottom line is replace
+            </div>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-xs-12">
+
+            <hr/>
+
+            <h2>Comparison of text editors</h2>
+
+            Text editor support for basic editing features
+
+            Editor Spell checking Regex-based find &amp; replace Encoding conversion Newline conversion Multiple undo/redo Rectangular block selection
+            Atom Yes Yes Yes Yes Yes Plug-in
+            ed No Yes No No No No
+            gedit Yes Plug-in Yes Yes Yes Plug-in
+            GNU Emacs Plug-in Yes Yes Yes Yes Yes
+            MS-DOS Editor No No No Yes No No
+            Nano Yes Yes No Yes Yes No
+            Notepad No No No No No No
+            Notepad++ Yes Yes Yes Yes Yes Yes
+            Notepad2 No Limited Yes Yes Yes Yes
+            Sublime Text Yes Yes Yes Yes Yes Yes
+            TextMate Yes Yes Partial Yes Yes Yes
+            TextPad Yes Yes Yes Yes Yes Yes
+            vi No Yes No No No No
+            Vim Yes Yes Yes Yes Yes Yes
+            Visual Studio Code Plug-in Yes Yes Yes Yes Yes
+            Editor Spell checking Regex-based find &amp; replace Encoding conversion Newline conversion Multiple undo/redo Rectangular block selection
+        </div>
+    </div>
+
+    <!--
+
+    Once you're done with this, press Ctrl + N and look for the "RecursiveReverseString" class
+
+    -->
+</div>
+</body>
+</html>

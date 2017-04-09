@@ -1,5 +1,3 @@
-import java.util.List;
-
 /**
  * https://www.codewars.com/kata/recursive-reverse-string
  */

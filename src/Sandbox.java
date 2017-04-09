@@ -18,6 +18,12 @@ import java.util.List;
 */
 
 /**
+ * Ctrl + Shift + A
+ * If you ever need anything from intellij, use the above command and search for it!
+ * Try opening the settings menu with it
+ */
+
+/**
 * To begin with, press Ctrl+Alt+L to reindent the page
 * (Easy way to not lose too many marks for poor formatting)
 */

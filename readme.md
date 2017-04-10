@@ -2,7 +2,7 @@
 
 A simple tutorial that goes through my most-used Intellij shortcuts. Not an exhaustive list.
 
-**Start at the Sandbox class**
+# OPEN THE SANDBOX CLASS FIRST
 
 ## Shortcuts Used
 ### General
